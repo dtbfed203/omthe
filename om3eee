@@ -1,0 +1,120 @@
+getgenv().Exodus = {
+    ["Aimbot"] = {
+        Enabled = true,
+        Keybinds = "q",
+        Locking = false, -- // don't touch
+        ["Predicting"] = {
+            Prediction = true,
+            PredictionAmmount = 0.1365
+        },
+        ["Smoothing"] = {
+            Smoothness = true,
+            SmoothnessAmmount = 0.086
+        },
+        ["Shaking"] = {
+            Shake = false,
+            ShakeAmmount = 0.7
+        },
+        ["Hitparts"] = {
+            AimpartType = "Nearest Part", -- // "Basic", "Nearest Part", "Nearest Point"
+            Aimpart = "HumanoidRootPart",
+            BasicAimpart = "HumanoidRootPart",
+            IgnorePart = true,
+            IgnoredParts = {"RightFoot", "LeftFoot"}
+        },
+        ["Resolving"] = {
+            Resolver = true,
+            ResolverType = "When Velocity is too high",
+            PosResolverMax = 60,
+            NegResolverMax = 60
+        },
+        ["FOV"] = {
+            ShowFOV = true,
+            DynamicAmmount = 3000,
+            FOVType = "Dynamic", -- // "Dynamic", "Static"
+            FOVRadius = 120,
+            Filled = false,
+            Sides = 25,
+            Thickness = 1,
+            Transparency = 1,
+            Color = Color3.fromRGB(0, 71, 171)
+        },
+        ["Checks"] = {
+            UseYAxis = false,
+            WallCheck = true,
+            VisibleCheck = true,
+            ForceFieldCheck = true,
+            SelfAliveCheck = true,
+            TargetKOCheck = true,
+            GrabbedCheck = true,
+            CrewCheck = false,
+            IsInFOVCheck = false,
+            SelfReloadCheck = false,
+            FirstPersonOnly = false,
+            AllowThirdPersonShiftLock = false,
+            ThirdPersonOnly = false
+        }
+    },
+    ["SilentAim"] = {
+        Enabled = true,
+        Keybinds = "p",
+        ["Predicting"] = {
+            PredictionAmmount = 0.122
+        },
+        ["Hitparts"] = {
+            AimpartType = "Nearest Part", -- // "Basic", "Nearest Part", "Nearest Point"
+            Aimpart = "HumanoidRootPart",
+            BasicAimpart = "HumanoidRootPart",
+            IgnorePart = true,
+            IgnoredParts = {"LeftFoot", "RightFoot"}
+        },
+        ["Resolving"] = {
+            Resolver = false,
+            ResolverType = "When Velocity is too high",
+            PosResolverMax = 60,
+            NegResolverMax = 60
+        },
+        ["FOV"] = {
+            ShowFOV = true,
+            FOVRadius = 60,
+            FOVType = "Dynamic", -- // "Dynamic", "Static"
+            FOVType2 = "Cursor",
+            DynamicAmmount = 3000,
+            Filled = false,
+            Sides = 25,
+            Thickness = 1,
+            Transparency = 1,
+            Color = Color3.fromRGB(0, 71, 171)
+        },
+        ["Checks"] = {
+            HitChance = 100,
+            UseYAxis = false,
+            SelfAliveCheck = true,
+            SelfReloadCheck = true,
+            IsInFOVCheck = true,
+            GrabbedCheck = true,
+            ForceFieldCheck = false,
+            TargetCrew = false,
+            WallCheck = false,
+            TargetKOCheck = false
+        }
+    },
+    ["Misc"] = {
+        ["Macro"] = {
+            Keybind = "v",
+            Speed = 1,
+            Type = "First" -- // "First", "Third"
+        },
+        ["Key360"] = {
+            Toggle = false,
+            RotationSpeed = 2500,
+            Keybind = "c"
+        },
+        ["NoClip"] = {
+            Enabled = true,
+            Key = "t",
+            GunName = "[Shotgun]",
+            Delay = 0.1
+        }
+    }
+}
